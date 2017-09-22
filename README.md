@@ -6,6 +6,7 @@
 Show us what you can do with Angular! 
 
 We'd like you to write a small app with the following requirements:
+
 * Use a RESTFul API. 
 * Good looking UI 
 * At least one User interaction (e.g. search) 
@@ -14,6 +15,7 @@ We'd like you to write a small app with the following requirements:
 On the API side, the choice is yours, from the Star wars API (https://swapi.co), Github(https://developer.github.com/v3/search/#search-issues), (Random User API (https://randomuser.me), .....
 
 Few notes on the app:
+
 * UI : You can use Bootstrap, Material, ... Or build something from scratch. 
 * Use best practices in writing JavaScript / Coffeescript, CSS, and HTML.
 * Write clearly and use proper MVC structure to write the application.
