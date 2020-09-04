@@ -17,8 +17,8 @@ On the API side, the choice is yours, from the Star wars API (https://swapi.co),
 Few notes on the app:
 
 * UI : You can use Bootstrap, Material, ... Or build something from scratch. 
-* Use best practices in writing JavaScript / Coffeescript, CSS, and HTML.
-* Write clearly and use proper MVC structure to write the application.
+* Use best practices in writing JavaScript / Typescript, CSS, and HTML.
+* Write clearly and use a proper structure to write the application.
 
 We could be sneaky and not say anything else, but here's some things we're looking to see:
 
@@ -29,8 +29,8 @@ We could be sneaky and not say anything else, but here's some things we're looki
 
 ### Submission notes
 
-You can just submit a PR here, create a private repo for free on [GitLab](https://www.gitlab.com/?gclid=CLCBmaWM474CFaMSwwodAqIAqw) or [Bitbucket](https://bitbucket.org/), or just send us the repo by email. Whatever you prefer.
+You can just submit a PR here, create a private repo, or just send us the repo by email. Whatever you prefer.
 
 ---
 
-[@HowThortful](https://thortful.com) - 2017
+[@thortful](https://www.thortful.com) - 2020
