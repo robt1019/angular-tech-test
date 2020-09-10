@@ -1,0 +1,11 @@
+.app__container {
+  margin: 16px;
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+}
+
+.app__content {
+  max-width: 1400px;
+  min-width: 300px;
+}
