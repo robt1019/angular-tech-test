@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { Person } from '../models/person.model';
 import { map } from 'rxjs/operators';
 import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root',
@@ -20,7 +20,7 @@ export class StarWarsService {
           response.results.map((r) => ({
             name: r.name,
             height: parseInt(r.height, 10),
-            birthYear: parseInt(r.birth_year, 10),
+            birthYear: r.birth_year,
             gender: r.gender,
           }))
         )
