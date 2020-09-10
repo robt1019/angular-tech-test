@@ -1,0 +1,8 @@
+.contact-search {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-search__search-box {
+  height: 16px;
+}

@@ -7,20 +7,28 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactListComponent } from './components/contact-list/contact-list.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ContactSearchComponent } from './components/contact-search/contact-search.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContactListComponent,
     ContactComponent,
-    ContactSearchComponent
+    ContactSearchComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatButtonModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

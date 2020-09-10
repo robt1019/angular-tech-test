@@ -1,1 +1,7 @@
-<p>contact-search works!</p>
+<form [formGroup]="searchForm">
+  <mat-form-field formControlName="searchTerm">
+    <mat-label>Character name</mat-label>
+    <input matInput type="text" />
+  </mat-form-field>
+  <button mat-raised-button>Search</button>
+</form>
