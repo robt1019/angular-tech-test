@@ -18,6 +18,7 @@ export class StarWarsService {
       .pipe(
         map((response) =>
           response.results.map((r) => ({
+            id: r.url.split('/')[r.url.split('/').length - 2],
             name: r.name,
             height: parseInt(r.height, 10),
             birthYear: r.birth_year,
@@ -25,5 +26,17 @@ export class StarWarsService {
           }))
         )
       );
+  }
+
+  public characterById(id: string): Observable<Person> {
+    return this.http.get<any>(`https://swapi.dev/api/people/${id}`).pipe(
+      map((response) => ({
+        id: response.url.split('/')[response.url.split('/').length - 2],
+        name: response.name,
+        height: parseInt(response.height, 10),
+        birthYear: response.birth_year,
+        gender: response.gender,
+      }))
+    );
   }
 }

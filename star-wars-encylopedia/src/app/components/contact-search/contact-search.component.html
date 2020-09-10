@@ -1,3 +1,5 @@
+<h1>My Star Wars Contacts</h1>
+
 <form [formGroup]="searchForm">
   <mat-form-field>
     <mat-label>Character name</mat-label>
@@ -11,4 +13,6 @@
   </button>
 </form>
 
-<div *ngFor="let person of results | async">{{ person | json }}</div>
+<div class="contact-search__contact" *ngFor="let person of results | async">
+  <a [routerLink]="['contact', person.id]">{{ person.name }}</a>
+</div>
