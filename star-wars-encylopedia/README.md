@@ -1,27 +1,19 @@
 # StarWarsEncylopedia
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
+Less of an encylopedia and more of a star wars character search portal...
 
-## Development server
+It is supposed to be a contact list which you can search.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+I focussed on getting limited functionality working well and solidly tested.
 
-## Code scaffolding
+You can search for characters by name and then navigate to a detail view
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Alternatively, if you know the id of a specific character, you can deep link.
 
-## Build
+E.G. `http://localhost:4200/contact/1`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+`npm install` to install the project
 
-## Running unit tests
+`npm run start` to run it. It will be available at http://localhost:4200
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+`npm run test` to run the tests
