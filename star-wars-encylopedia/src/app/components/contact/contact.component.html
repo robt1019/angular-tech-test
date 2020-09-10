@@ -1,5 +1,7 @@
 <mat-card>
-  <mat-card-title>{{ (contact | async)?.name }}</mat-card-title>
+  <mat-card-title class="contact__name">{{
+    (contact | async)?.name
+  }}</mat-card-title>
   <mat-card-content>
     <p>Gender: {{ (contact | async)?.gender }}</p>
     <p>Birth Year: {{ (contact | async)?.birthYear }}</p>

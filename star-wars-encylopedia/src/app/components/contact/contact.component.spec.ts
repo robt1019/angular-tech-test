@@ -5,10 +5,12 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
 import { of } from 'rxjs';
 import { Person } from 'src/app/models/person.model';
 import { StarWarsService } from 'src/app/services/star-wars.service';
+import { By } from '@angular/platform-browser';
 
 describe('ContactComponent', () => {
   let component: ContactComponent;
   let fixture: ComponentFixture<ContactComponent>;
+  let starWarsService: StarWarsService;
 
   const mockActivatedRoute = {
     paramMap: of({
@@ -41,6 +43,8 @@ describe('ContactComponent', () => {
   }));
 
   beforeEach(() => {
+    starWarsService = TestBed.get(StarWarsService);
+    spyOn(starWarsService, 'characterById').and.callThrough();
     fixture = TestBed.createComponent(ContactComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
@@ -48,5 +52,16 @@ describe('ContactComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should call the star wars service correctly based on the person Id', () => {
+    expect(starWarsService.characterById).toHaveBeenCalledWith('1');
+  });
+
+  it('should populate the ui correctly based on the result', () => {
+    expect(
+      fixture.debugElement.query(By.css('.contact__name')).nativeElement
+        .innerHTML
+    ).toEqual('Luke Skywalker');
   });
 });
