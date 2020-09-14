@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="8" viewBox="0 0 15 8">
+    <g fill="none" fill-rule="evenodd">
+        <g fill="#FF6900" fill-rule="nonzero">
+            <g>
+                <path d="M336.5 53L344 61 329 61z" transform="translate(-329 -515) translate(0 462) matrix(1 0 0 -1 0 114)"/>
+            </g>
+        </g>
+    </g>
+</svg>

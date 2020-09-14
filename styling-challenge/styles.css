@@ -1,10 +1,21 @@
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   font-size: 16px;
   font-family: "Mulish", sans-serif;
   margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+select {
+  -o-appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
 }
 
 h2 {
@@ -15,6 +26,9 @@ h2 {
 .delivery {
   max-width: 550px;
   margin: 39px 22px 38px 22px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .progress-bar {
@@ -121,6 +135,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .address-type__radio--checked {
@@ -142,6 +157,7 @@ h2 {
 }
 
 .delivery__field {
+  position: relative;
   min-width: 335px;
   display: flex;
   flex-direction: column;
@@ -155,6 +171,15 @@ h2 {
   border-radius: 2px;
   border: solid 1px #c8c8c8;
   font-size: 16px;
+  background: white;
+}
+
+.delivery__dropdown-arrow {
+  height: 8px;
+  width: 12px;
+  position: absolute;
+  right: 15px;
+  top: 54px;
 }
 
 .delivery__field label {
