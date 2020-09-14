@@ -18,6 +18,10 @@ select::-ms-expand {
   display: none;
 }
 
+p {
+  margin: 0;
+}
+
 h2 {
   font-size: 28px;
   font-weight: 800;
@@ -114,12 +118,14 @@ h2 {
 
 .address__header {
   text-align: center;
+  margin: 35px 0 15px 0;
 }
 
 .address-type {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-bottom: 29px;
 }
 
 .address-type__option {
@@ -154,6 +160,7 @@ h2 {
 .address-type__description {
   font-size: 14px;
   width: 170px;
+  margin: 9px 0;
 }
 
 .delivery__field {
@@ -162,7 +169,6 @@ h2 {
   display: flex;
   flex-direction: column;
   margin-bottom: 13px;
-  margin-top: 38px;
 }
 
 .delivery__input {
