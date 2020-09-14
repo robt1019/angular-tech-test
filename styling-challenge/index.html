@@ -1,0 +1,60 @@
+<ul class="progress-bar">
+  <li class="progress-bar__step:completed">
+    <div class="progress-bar__step-identifier"></div>
+    <div class="progress-bar__step-name">Login</div>
+  </li>
+  <li class="progress-bar__step:active">
+    <div class="progress-bar__step-identifier:active">2</div>
+    <div class="progress-bar__step-name">Delivery</div>
+  </li>
+  <li class="progress-bar__step">
+    <div class="progress-bar__step-identifier">3</div>
+    <div class="progress-bar__step-name">Payment</div>
+  </li>
+  <li class="progress-bar__step">
+    <div class="progress-bar__step-identifier">4</div>
+    <div class="progress-bar__step-name">Confirm</div>
+  </li>
+</ul>
+
+<h2>Who do you want to send these cards to?</h2>
+
+<div class="address-type">
+  <div class="address-type__option">
+    <input
+      type="radio"
+      id="oneAddressRadio"
+      name="addressType"
+      value="one"
+      checked
+    />
+    <label for="oneAddressRadio">1 address</label>
+    <p class="address-type__description">
+      Your cards will be send with blank envelopes
+    </p>
+  </div>
+
+  <div class="address-type__option">
+    <input
+      type="radio"
+      id="multipleAddresses"
+      name="addressType"
+      value="multiple"
+    />
+    <label for="oneAddressRadio">Multiple address</label>
+    <p class="address-type__description">
+      Add individual addresses to your cards
+    </p>
+  </div>
+</div>
+
+<div class="delivery-country">
+  <select class="delivery-country">
+    <option>United Kingdom</option>
+  </select>
+</div>
+
+<div class="address-lookup">
+  <input type="text" placeholder="Search for a UK postcode" />
+  <a class="address-lookup__manual-link" href="">Add address manually</a>
+</div>
