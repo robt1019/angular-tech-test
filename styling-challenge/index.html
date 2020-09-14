@@ -2,87 +2,91 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <ul class="progress-bar">
-      <li class="progress-bar__step progress-bar__step--completed">
-        <div class="progress-bar__step-identifier"></div>
-        <div class="progress-bar__step-name">Login</div>
-      </li>
-      <li class="progress-bar__step progress-bar__step--active">
-        <div class="progress-bar__step-identifier">2</div>
-        <div class="progress-bar__step-name">Delivery</div>
-      </li>
-      <li class="progress-bar__step">
-        <div class="progress-bar__step-identifier">3</div>
-        <div class="progress-bar__step-name">Payment</div>
-      </li>
-      <li class="progress-bar__step">
-        <div class="progress-bar__step-identifier">4</div>
-        <div class="progress-bar__step-name">Confirm</div>
-      </li>
-    </ul>
+    <div class="delivery">
+      <ul class="progress-bar">
+        <li class="progress-bar__step progress-bar__step--completed">
+          <div class="progress-bar__step-identifier">
+            <img src="./tick.svg" />
+          </div>
+          <div class="progress-bar__step-name">Login</div>
+        </li>
+        <li class="progress-bar__step progress-bar__step--active">
+          <div class="progress-bar__step-identifier">2</div>
+          <div class="progress-bar__step-name">Delivery</div>
+        </li>
+        <li class="progress-bar__step">
+          <div class="progress-bar__step-identifier">3</div>
+          <div class="progress-bar__step-name">Payment</div>
+        </li>
+        <li class="progress-bar__step">
+          <div class="progress-bar__step-identifier">4</div>
+          <div class="progress-bar__step-name">Confirm</div>
+        </li>
+      </ul>
 
-    <h2 class="address__header">Who do you want to send these cards to?</h2>
+      <h2 class="address__header">Who do you want to send these cards to?</h2>
 
-    <div class="address-type">
-      <div class="address-type__option">
-        <div class="address-type__radio address-type__radio--checked">
-          <input
-            type="radio"
-            id="oneAddressRadio"
-            name="addressType"
-            value="one"
-            hidden
-            checked
-          />
-          <label for="oneAddressRadio">1 address</label>
+      <div class="address-type">
+        <div class="address-type__option">
+          <div class="address-type__radio address-type__radio--checked">
+            <input
+              type="radio"
+              id="oneAddressRadio"
+              name="addressType"
+              value="one"
+              hidden
+              checked
+            />
+            <label for="oneAddressRadio">1 address</label>
+          </div>
+          <p class="address-type__description">
+            Your cards will be sent with blank envelopes
+          </p>
         </div>
-        <p class="address-type__description">
-          Your cards will be sent with blank envelopes
-        </p>
+
+        <div class="address-type__option">
+          <div class="address-type__radio">
+            <input
+              type="radio"
+              id="multipleAddresses"
+              name="addressType"
+              value="multiple"
+              hidden
+            />
+            <label for="oneAddressRadio">Multiple address</label>
+          </div>
+          <p class="address-type__description">
+            Add individual addresses to your cards
+          </p>
+        </div>
       </div>
 
-      <div class="address-type__option">
-        <div class="address-type__radio">
-          <input
-            type="radio"
-            id="multipleAddresses"
-            name="addressType"
-            value="multiple"
-            hidden
-          />
-          <label for="oneAddressRadio">Multiple address</label>
-        </div>
-        <p class="address-type__description">
-          Add individual addresses to your cards
-        </p>
+      <div class="delivery__field">
+        <label for="deliveryCountry">Delivery country</label>
+        <select
+          class="delivery__input"
+          id="deliveryCountry"
+          class="delivery-country"
+        >
+          <option>United Kingdom</option>
+        </select>
       </div>
-    </div>
 
-    <div class="delivery__field">
-      <label for="deliveryCountry">Delivery country</label>
-      <select
-        class="delivery__input"
-        id="deliveryCountry"
-        class="delivery-country"
-      >
-        <option>United Kingdom</option>
-      </select>
+      <div class="delivery__field">
+        <label for="deliveryCountry">Postcode</label>
+        <input
+          class="delivery__input"
+          type="text"
+          placeholder="Search for a UK postcode"
+        />
+      </div>
+      <a class="address-lookup__manual-link" href="">Add address manually</a>
     </div>
-
-    <div class="delivery__field">
-      <label for="deliveryCountry">Postcode</label>
-      <input
-        class="delivery__input"
-        type="text"
-        placeholder="Search for a UK postcode"
-      />
-    </div>
-    <a class="address-lookup__manual-link" href="">Add address manually</a>
   </body>
 </html>
