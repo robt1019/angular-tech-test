@@ -1,0 +1,101 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 39px;
+  margin-right: 38px;
+  font-size: 16px;
+  font-family: "Mulish", sans-serif;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.progress-bar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.progress-bar__step {
+  list-style: none;
+  display: inline-block;
+}
+
+.progress-bar__step-name {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.address__header {
+  text-align: center;
+}
+
+.address-type {
+  display: flex;
+  flex-direction: row;
+}
+
+.address-type__option {
+  width: 147px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.address-type__radio {
+  width: 147px;
+  height: 147px;
+  border: solid 1px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.address-type__radio--checked {
+  border: 1px solid white;
+  background-color: #ff6900;
+  color: white;
+}
+
+.address-type__option label {
+  font-size: 18px;
+  font-weight: 800;
+  width: 90px;
+  text-align: center;
+}
+
+.address-type__description {
+  font-size: 14px;
+  width: 155px;
+}
+
+.delivery__field {
+  min-width: 335px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 13px;
+}
+
+.delivery__input {
+  height: 50px;
+  padding: 15px 0 15px 11px;
+  border-radius: 2px;
+  border: solid 1px #c8c8c8;
+  font-size: 16px;
+}
+
+.delivery__field label {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 9px;
+}
+
+.address-lookup__manual-link {
+  color: #ff6900;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 9px;
+}
