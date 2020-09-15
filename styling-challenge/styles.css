@@ -153,7 +153,7 @@ h2 {
 }
 
 .address-type__radio--checked {
-  border: 1px solid white;
+  border: 1px solid #ff6900;
   background-color: #ff6900;
   color: white;
 }
@@ -171,9 +171,19 @@ h2 {
   margin: 9px 0;
 }
 
+@media (max-width: 370px) {
+  .address-type__option {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .address-type__description {
+    width: 150px;
+  }
+}
+
 .delivery__field {
   position: relative;
-  min-width: 335px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   margin-bottom: 13px;
